@@ -9,125 +9,96 @@ public class Employee implements java.io.Serializable {
 	static final long serialVersionUID = 1L;
 
 	@org.kie.api.definition.type.Label(value = "Employee First Name")
-	private java.lang.String empFirstName;
+	private java.lang.String firstName;
+
 	@org.kie.api.definition.type.Label(value = "Employee Last Name")
-	private java.lang.String empLastName;
-	@org.kie.api.definition.type.Label(value = "Employee Full Name")
-	private java.lang.String empFullName;
+	private java.lang.String lastName;
+
 	@org.kie.api.definition.type.Label(value = "Employee Role")
-	private java.lang.String empRole;
+	private java.lang.String role;
+
 	@org.kie.api.definition.type.Label(value = "Employee Phone number")
-	private java.lang.String empPhone;
-	@org.kie.api.definition.type.Label(value = "Employee Address")
-	private java.lang.String empAddress;
+	private java.lang.String phoneNumber;
+
 	@org.kie.api.definition.type.Label(value = "Employee Hire Date")
-	private java.util.Date empHireDate;
+	private java.util.Date hireDate;
+
 	@org.kie.api.definition.type.Label(value = "Employee Email Id")
-	private java.lang.String empEmail;
-	@org.kie.api.definition.type.Label(value = "Employee Compensation")
-	private java.lang.String empCompensation;
+	private java.lang.String emailId;
+
 	@org.kie.api.definition.type.Label(value = "Employee ID")
-	private java.lang.String empId;
+	private java.lang.String userId;
 
 	public Employee() {
 	}
 
-	public java.lang.String getEmpFirstName() {
-		return this.empFirstName;
+	public java.lang.String getFirstName() {
+		return this.firstName;
 	}
 
-	public void setEmpFirstName(java.lang.String empFirstName) {
-		this.empFirstName = empFirstName;
+	public void setFirstName(java.lang.String firstName) {
+		this.firstName = firstName;
 	}
 
-	public java.lang.String getEmpLastName() {
-		return this.empLastName;
+	public java.lang.String getLastName() {
+		return this.lastName;
 	}
 
-	public void setEmpLastName(java.lang.String empLastName) {
-		this.empLastName = empLastName;
+	public void setLastName(java.lang.String lastName) {
+		this.lastName = lastName;
 	}
 
-	public java.lang.String getEmpFullName() {
-		return this.empFullName;
+	public java.lang.String getRole() {
+		return this.role;
 	}
 
-	public void setEmpFullName(java.lang.String empFullName) {
-		this.empFullName = empFullName;
+	public void setRole(java.lang.String role) {
+		this.role = role;
 	}
 
-	public java.lang.String getEmpRole() {
-		return this.empRole;
+	public java.lang.String getPhoneNumber() {
+		return this.phoneNumber;
 	}
 
-	public void setEmpRole(java.lang.String empRole) {
-		this.empRole = empRole;
+	public void setPhoneNumber(java.lang.String phoneNumber) {
+		this.phoneNumber = phoneNumber;
 	}
 
-	public java.lang.String getEmpPhone() {
-		return this.empPhone;
+	public java.util.Date getHireDate() {
+		return this.hireDate;
 	}
 
-	public void setEmpPhone(java.lang.String empPhone) {
-		this.empPhone = empPhone;
+	public void setHireDate(java.util.Date hireDate) {
+		this.hireDate = hireDate;
 	}
 
-	public java.lang.String getEmpAddress() {
-		return this.empAddress;
+	public java.lang.String getEmailId() {
+		return this.emailId;
 	}
 
-	public void setEmpAddress(java.lang.String empAddress) {
-		this.empAddress = empAddress;
+	public void setEmailId(java.lang.String emailId) {
+		this.emailId = emailId;
 	}
 
-	public java.util.Date getEmpHireDate() {
-		return this.empHireDate;
+	public java.lang.String getUserId() {
+		return this.userId;
 	}
 
-	public void setEmpHireDate(java.util.Date empHireDate) {
-		this.empHireDate = empHireDate;
+	public void setUserId(java.lang.String userId) {
+		this.userId = userId;
 	}
 
-	public java.lang.String getEmpEmail() {
-		return this.empEmail;
-	}
-
-	public void setEmpEmail(java.lang.String empEmail) {
-		this.empEmail = empEmail;
-	}
-
-	public java.lang.String getEmpCompensation() {
-		return this.empCompensation;
-	}
-
-	public void setEmpCompensation(java.lang.String empCompensation) {
-		this.empCompensation = empCompensation;
-	}
-
-	public java.lang.String getEmpId() {
-		return this.empId;
-	}
-
-	public void setEmpId(java.lang.String empId) {
-		this.empId = empId;
-	}
-
-	public Employee(java.lang.String empFirstName,
-			java.lang.String empLastName, java.lang.String empFullName,
-			java.lang.String empRole, java.lang.String empPhone,
-			java.lang.String empAddress, java.util.Date empHireDate,
-			java.lang.String empEmail, java.lang.String empCompensation,
-			java.lang.String empId) {
-		this.empFirstName = empFirstName;
-		this.empLastName = empLastName;
-		this.empFullName = empFullName;
-		this.empRole = empRole;
-		this.empPhone = empPhone;
-		this.empAddress = empAddress;
-		this.empHireDate = empHireDate;
-		this.empEmail = empEmail;
-		this.empCompensation = empCompensation;
-		this.empId = empId;
+	public Employee(java.lang.String firstName, java.lang.String lastName,
+			java.lang.String role, java.lang.String phoneNumber,
+			java.util.Date hireDate, java.lang.String emailId,
+			java.lang.String userId) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.role = role;
+		this.phoneNumber = phoneNumber;
+		this.hireDate = hireDate;
+		this.emailId = emailId;
+		this.userId = userId;
 	}
 
 }

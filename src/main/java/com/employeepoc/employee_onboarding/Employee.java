@@ -8,26 +8,29 @@ public class Employee implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Employee First Name")
+	@org.kie.api.definition.type.Label("First Name")
 	private java.lang.String firstName;
 
-	@org.kie.api.definition.type.Label(value = "Employee Last Name")
+	@org.kie.api.definition.type.Label("Last Name")
 	private java.lang.String lastName;
 
-	@org.kie.api.definition.type.Label(value = "Employee Role")
+	@org.kie.api.definition.type.Label("Role")
 	private java.lang.String role;
 
-	@org.kie.api.definition.type.Label(value = "Employee Phone number")
+	@org.kie.api.definition.type.Label("Phone number")
 	private java.lang.String phoneNumber;
 
-	@org.kie.api.definition.type.Label(value = "Employee Hire Date")
+	@org.kie.api.definition.type.Label("Hire Date")
 	private java.util.Date hireDate;
 
-	@org.kie.api.definition.type.Label(value = "Employee Email Id")
+	@org.kie.api.definition.type.Label("Email Id")
 	private java.lang.String emailId;
 
-	@org.kie.api.definition.type.Label(value = "Employee ID")
+	@org.kie.api.definition.type.Label("User ID")
 	private java.lang.String userId;
+
+	@org.kie.api.definition.type.Label(value = "Address")
+	private java.lang.String address;
 
 	public Employee() {
 	}
@@ -88,10 +91,18 @@ public class Employee implements java.io.Serializable {
 		this.userId = userId;
 	}
 
+	public java.lang.String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(java.lang.String address) {
+		this.address = address;
+	}
+
 	public Employee(java.lang.String firstName, java.lang.String lastName,
 			java.lang.String role, java.lang.String phoneNumber,
 			java.util.Date hireDate, java.lang.String emailId,
-			java.lang.String userId) {
+			java.lang.String userId, java.lang.String address) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.role = role;
@@ -99,6 +110,7 @@ public class Employee implements java.io.Serializable {
 		this.hireDate = hireDate;
 		this.emailId = emailId;
 		this.userId = userId;
+		this.address = address;
 	}
 
 }

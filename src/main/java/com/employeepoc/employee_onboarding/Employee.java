@@ -6,12 +6,128 @@ package com.employeepoc.employee_onboarding;
 
 public class Employee implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Employee() {
-    }
+	@org.kie.api.definition.type.Label(value = "Employee First Name")
+	private java.lang.String empFirstName;
+	@org.kie.api.definition.type.Label(value = "Employee Last Name")
+	private java.lang.String empLastName;
+	@org.kie.api.definition.type.Label(value = "Employee Full Name")
+	private java.lang.String empFullName;
+	@org.kie.api.definition.type.Label(value = "Employee Role")
+	private java.lang.String empRole;
+	@org.kie.api.definition.type.Label(value = "Employee Phone number")
+	private java.lang.String empPhone;
+	@org.kie.api.definition.type.Label(value = "Employee Address")
+	private java.lang.String empAddress;
+	@org.kie.api.definition.type.Label(value = "Employee Hire Date")
+	private java.util.Date empHireDate;
+	@org.kie.api.definition.type.Label(value = "Employee Email Id")
+	private java.lang.String empEmail;
+	@org.kie.api.definition.type.Label(value = "Employee Compensation")
+	private java.lang.String empCompensation;
+	@org.kie.api.definition.type.Label(value = "Employee ID")
+	private java.lang.String empId;
 
+	public Employee() {
+	}
 
+	public java.lang.String getEmpFirstName() {
+		return this.empFirstName;
+	}
 
+	public void setEmpFirstName(java.lang.String empFirstName) {
+		this.empFirstName = empFirstName;
+	}
+
+	public java.lang.String getEmpLastName() {
+		return this.empLastName;
+	}
+
+	public void setEmpLastName(java.lang.String empLastName) {
+		this.empLastName = empLastName;
+	}
+
+	public java.lang.String getEmpFullName() {
+		return this.empFullName;
+	}
+
+	public void setEmpFullName(java.lang.String empFullName) {
+		this.empFullName = empFullName;
+	}
+
+	public java.lang.String getEmpRole() {
+		return this.empRole;
+	}
+
+	public void setEmpRole(java.lang.String empRole) {
+		this.empRole = empRole;
+	}
+
+	public java.lang.String getEmpPhone() {
+		return this.empPhone;
+	}
+
+	public void setEmpPhone(java.lang.String empPhone) {
+		this.empPhone = empPhone;
+	}
+
+	public java.lang.String getEmpAddress() {
+		return this.empAddress;
+	}
+
+	public void setEmpAddress(java.lang.String empAddress) {
+		this.empAddress = empAddress;
+	}
+
+	public java.util.Date getEmpHireDate() {
+		return this.empHireDate;
+	}
+
+	public void setEmpHireDate(java.util.Date empHireDate) {
+		this.empHireDate = empHireDate;
+	}
+
+	public java.lang.String getEmpEmail() {
+		return this.empEmail;
+	}
+
+	public void setEmpEmail(java.lang.String empEmail) {
+		this.empEmail = empEmail;
+	}
+
+	public java.lang.String getEmpCompensation() {
+		return this.empCompensation;
+	}
+
+	public void setEmpCompensation(java.lang.String empCompensation) {
+		this.empCompensation = empCompensation;
+	}
+
+	public java.lang.String getEmpId() {
+		return this.empId;
+	}
+
+	public void setEmpId(java.lang.String empId) {
+		this.empId = empId;
+	}
+
+	public Employee(java.lang.String empFirstName,
+			java.lang.String empLastName, java.lang.String empFullName,
+			java.lang.String empRole, java.lang.String empPhone,
+			java.lang.String empAddress, java.util.Date empHireDate,
+			java.lang.String empEmail, java.lang.String empCompensation,
+			java.lang.String empId) {
+		this.empFirstName = empFirstName;
+		this.empLastName = empLastName;
+		this.empFullName = empFullName;
+		this.empRole = empRole;
+		this.empPhone = empPhone;
+		this.empAddress = empAddress;
+		this.empHireDate = empHireDate;
+		this.empEmail = empEmail;
+		this.empCompensation = empCompensation;
+		this.empId = empId;
+	}
 
 }

@@ -6,12 +6,128 @@ package com.employeepoc.employee_onboarding;
 
 public class EquipmentRequest implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public EquipmentRequest() {
-    }
+	@org.kie.api.definition.type.Label(value = "Equipment Not Required")
+	private java.lang.Boolean equipmentNotRequired;
+	@org.kie.api.definition.type.Label(value = "Employee Id")
+	private java.lang.String employeeId;
+	@org.kie.api.definition.type.Label(value = "Date Created")
+	private java.util.Date dateCreated;
+	@org.kie.api.definition.type.Label(value = "Subject")
+	private java.lang.String subject;
+	@org.kie.api.definition.type.Label(value = "Description")
+	private java.lang.String description;
+	@org.kie.api.definition.type.Label(value = "Due Date")
+	private java.util.Date dueDate;
+	@org.kie.api.definition.type.Label(value = "Assigned To")
+	private java.lang.String assignedTo;
+	@org.kie.api.definition.type.Label(value = "Is Completed ?")
+	private java.lang.Boolean isCompleted;
+	@org.kie.api.definition.type.Label(value = "Date Completed")
+	private java.util.Date dateCompleted;
+	@org.kie.api.definition.type.Label(value = "Notes")
+	private java.lang.String notes;
 
+	public EquipmentRequest() {
+	}
 
+	public java.lang.Boolean getEquipmentNotRequired() {
+		return this.equipmentNotRequired;
+	}
 
+	public void setEquipmentNotRequired(java.lang.Boolean equipmentNotRequired) {
+		this.equipmentNotRequired = equipmentNotRequired;
+	}
+
+	public java.lang.String getEmployeeId() {
+		return this.employeeId;
+	}
+
+	public void setEmployeeId(java.lang.String employeeId) {
+		this.employeeId = employeeId;
+	}
+
+	public java.util.Date getDateCreated() {
+		return this.dateCreated;
+	}
+
+	public void setDateCreated(java.util.Date dateCreated) {
+		this.dateCreated = dateCreated;
+	}
+
+	public java.lang.String getSubject() {
+		return this.subject;
+	}
+
+	public void setSubject(java.lang.String subject) {
+		this.subject = subject;
+	}
+
+	public java.lang.String getDescription() {
+		return this.description;
+	}
+
+	public void setDescription(java.lang.String description) {
+		this.description = description;
+	}
+
+	public java.util.Date getDueDate() {
+		return this.dueDate;
+	}
+
+	public void setDueDate(java.util.Date dueDate) {
+		this.dueDate = dueDate;
+	}
+
+	public java.lang.String getAssignedTo() {
+		return this.assignedTo;
+	}
+
+	public void setAssignedTo(java.lang.String assignedTo) {
+		this.assignedTo = assignedTo;
+	}
+
+	public java.lang.Boolean getIsCompleted() {
+		return this.isCompleted;
+	}
+
+	public void setIsCompleted(java.lang.Boolean isCompleted) {
+		this.isCompleted = isCompleted;
+	}
+
+	public java.util.Date getDateCompleted() {
+		return this.dateCompleted;
+	}
+
+	public void setDateCompleted(java.util.Date dateCompleted) {
+		this.dateCompleted = dateCompleted;
+	}
+
+	public java.lang.String getNotes() {
+		return this.notes;
+	}
+
+	public void setNotes(java.lang.String notes) {
+		this.notes = notes;
+	}
+
+	public EquipmentRequest(java.lang.Boolean equipmentNotRequired,
+			java.lang.String employeeId, java.util.Date dateCreated,
+			java.lang.String subject, java.lang.String description,
+			java.util.Date dueDate, java.lang.String assignedTo,
+			java.lang.Boolean isCompleted, java.util.Date dateCompleted,
+			java.lang.String notes) {
+		this.equipmentNotRequired = equipmentNotRequired;
+		this.employeeId = employeeId;
+		this.dateCreated = dateCreated;
+		this.subject = subject;
+		this.description = description;
+		this.dueDate = dueDate;
+		this.assignedTo = assignedTo;
+		this.isCompleted = isCompleted;
+		this.dateCompleted = dateCompleted;
+		this.notes = notes;
+	}
 
 }

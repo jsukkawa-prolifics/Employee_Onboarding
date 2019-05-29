@@ -32,8 +32,11 @@ public class Employee implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Address")
 	private Address address;
 
-	@org.kie.api.definition.type.Label(value = "Employee Id")
+	@org.kie.api.definition.type.Label("Employee Id")
 	private java.lang.String empId;
+
+	@org.kie.api.definition.type.Label(value = "User Content")
+	private java.lang.String userContent;
 
 	public Employee() {
 	}
@@ -110,12 +113,20 @@ public class Employee implements java.io.Serializable {
 		this.empId = empId;
 	}
 
+	public java.lang.String getUserContent() {
+		return this.userContent;
+	}
+
+	public void setUserContent(java.lang.String userContent) {
+		this.userContent = userContent;
+	}
+
 	public Employee(java.lang.String firstName, java.lang.String lastName,
 			java.lang.String role, java.lang.String phoneNumber,
 			java.util.Date hireDate, java.lang.String emailId,
 			java.lang.String userId,
 			com.employeepoc.employee_onboarding.Address address,
-			java.lang.String empId) {
+			java.lang.String empId, java.lang.String userContent) {
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.role = role;
@@ -125,6 +136,7 @@ public class Employee implements java.io.Serializable {
 		this.userId = userId;
 		this.address = address;
 		this.empId = empId;
+		this.userContent = userContent;
 	}
 
 }
